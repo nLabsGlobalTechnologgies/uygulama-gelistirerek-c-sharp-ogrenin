@@ -57,5 +57,12 @@ namespace WinFormsApp1
             var result = price + kdv;
             listBox2.Items.Add("Ürün : " + product + " Fiyat : " + price + " Kdv : " + kdv + " Sonuç : " + result);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmCinemaSaleOtomation frm = new frmCinemaSaleOtomation();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

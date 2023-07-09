@@ -55,14 +55,15 @@
             button3 = new Button();
             label3 = new Label();
             groupBox4 = new GroupBox();
-            textBox11 = new TextBox();
-            label8 = new Label();
-            button4 = new Button();
-            label9 = new Label();
-            textBox12 = new TextBox();
-            label10 = new Label();
-            textBox13 = new TextBox();
             listBox2 = new ListBox();
+            textBox12 = new TextBox();
+            textBox13 = new TextBox();
+            textBox11 = new TextBox();
+            button4 = new Button();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            button5 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -318,21 +319,35 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Ürün Kdv İşlemi";
             // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 15;
+            listBox2.Location = new Point(6, 127);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(383, 154);
+            listBox2.TabIndex = 8;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(71, 43);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(318, 23);
+            textBox12.TabIndex = 0;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(71, 69);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(318, 23);
+            textBox13.TabIndex = 0;
+            // 
             // textBox11
             // 
             textBox11.Location = new Point(71, 14);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(318, 23);
             textBox11.TabIndex = 0;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(17, 19);
-            label8.Name = "label8";
-            label8.Size = new Size(33, 15);
-            label8.TabIndex = 3;
-            label8.Text = "Ürün";
             // 
             // button4
             // 
@@ -344,22 +359,6 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(18, 46);
-            label9.Name = "label9";
-            label9.Size = new Size(32, 15);
-            label9.TabIndex = 3;
-            label9.Text = "Fiyat";
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(71, 43);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(318, 23);
-            textBox12.TabIndex = 0;
-            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -369,31 +368,44 @@
             label10.TabIndex = 3;
             label10.Text = "Kdv";
             // 
-            // textBox13
+            // label9
             // 
-            textBox13.Location = new Point(71, 69);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(318, 23);
-            textBox13.TabIndex = 0;
+            label9.AutoSize = true;
+            label9.Location = new Point(18, 46);
+            label9.Name = "label9";
+            label9.Size = new Size(32, 15);
+            label9.TabIndex = 3;
+            label9.Text = "Fiyat";
             // 
-            // listBox2
+            // label8
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(6, 127);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(383, 154);
-            listBox2.TabIndex = 8;
+            label8.AutoSize = true;
+            label8.Location = new Point(17, 19);
+            label8.Name = "label8";
+            label8.Size = new Size(33, 15);
+            label8.TabIndex = 3;
+            label8.Text = "Ürün";
+            // 
+            // button5
+            // 
+            button5.Location = new Point(431, 328);
+            button5.Name = "button5";
+            button5.Size = new Size(383, 23);
+            button5.TabIndex = 2;
+            button5.Text = "Bilet Otomasyonu";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(995, 679);
+            ClientSize = new Size(840, 680);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Controls.Add(button5);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hesaplama İşlemi";
@@ -446,5 +458,6 @@
         private Label label9;
         private ListBox listBox2;
         private TextBox textBox13;
+        private Button button5;
     }
 }
