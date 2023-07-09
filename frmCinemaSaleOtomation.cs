@@ -17,16 +17,19 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
+        int kasatutar = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            int misir, su, cay, bilet;
+            int misir, su, cay, bilet, result;
 
             misir = Convert.ToInt16(tx1.Text);
             su = Convert.ToInt16(tx2.Text);
             cay = Convert.ToInt16(tx3.Text);
             bilet = Convert.ToInt16(tx4.Text);
-            var result = misir * 4 + su * 1 + cay * 2 + bilet * 8;
-            lblresult.Text = result.ToString();
+            result = misir * 4 + su * 1 + cay * 2 + bilet * 8;
+            lblresult.Text = result.ToString() + " TL";
+            kasatutar = kasatutar + result;
+            lblKasa.Text = kasatutar.ToString() + " TL";
         }
     }
 }

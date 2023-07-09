@@ -47,7 +47,9 @@
             label16 = new Label();
             label5 = new Label();
             groupBox2 = new GroupBox();
+            lblKasa = new Label();
             lblresult = new Label();
+            label7 = new Label();
             label6 = new Label();
             button1 = new Button();
             groupBox4.SuspendLayout();
@@ -227,7 +229,9 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(lblKasa);
             groupBox2.Controls.Add(lblresult);
+            groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(button1);
             groupBox2.Location = new Point(446, 12);
@@ -237,19 +241,37 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Kasa";
             // 
+            // lblKasa
+            // 
+            lblKasa.AutoSize = true;
+            lblKasa.Location = new Point(87, 92);
+            lblKasa.Name = "lblKasa";
+            lblKasa.Size = new Size(43, 15);
+            lblKasa.TabIndex = 4;
+            lblKasa.Text = "0.00 TL";
+            // 
             // lblresult
             // 
             lblresult.AutoSize = true;
-            lblresult.Location = new Point(104, 72);
+            lblresult.Location = new Point(87, 17);
             lblresult.Name = "lblresult";
             lblresult.Size = new Size(43, 15);
             lblresult.TabIndex = 4;
             lblresult.Text = "0.00 TL";
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(6, 89);
+            label7.Name = "label7";
+            label7.Size = new Size(40, 15);
+            label7.TabIndex = 4;
+            label7.Text = "Kasa : ";
+            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(23, 69);
+            label6.Location = new Point(6, 14);
             label6.Name = "label6";
             label6.Size = new Size(55, 15);
             label6.TabIndex = 4;
@@ -257,7 +279,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(23, 98);
+            button1.Location = new Point(6, 43);
             button1.Name = "button1";
             button1.Size = new Size(209, 23);
             button1.TabIndex = 2;
@@ -309,5 +331,7 @@
         private Label label16;
         private Label lblresult;
         private Label label6;
+        private Label lblKasa;
+        private Label label7;
     }
 }
