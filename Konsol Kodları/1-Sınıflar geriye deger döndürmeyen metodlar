@@ -30,3 +30,25 @@ public class People
         }
     }
 }
+//sonraki örnek
+//Sınıflar
+//geriye deger döndürmeyen metodlar
+
+string name;
+Console.WriteLine("Lütfen İsim Girin");
+name = Console.ReadLine();
+People peoples = new People();
+peoples.PeopleList(name);
+Console.ReadLine();
+
+
+public class People
+{
+    public void PeopleList(string name)
+    {
+        for (int i = 0; i <= 10; i++)
+        {
+            Console.WriteLine($"{name} : " + i);
+        }
+    }
+}
