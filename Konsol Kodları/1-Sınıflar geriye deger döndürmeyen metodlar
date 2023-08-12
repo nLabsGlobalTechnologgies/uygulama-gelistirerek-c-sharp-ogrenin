@@ -14,3 +14,19 @@ public class Message
         Console.WriteLine("Merhaba Mesajı");
     }
 }
+//sonraki örnek
+People peoples = new People();
+peoples.PeopleList("Cuma KÖSE");
+Console.ReadLine();
+
+
+public class People
+{
+    public void PeopleList(string name)
+    {
+        for (int i = 0; i <= 10; i++)
+        {
+            Console.WriteLine($"{name} : " + i);
+        }
+    }
+}
