@@ -1,8 +1,6 @@
 //Sınıflar
 //Constructor Yapıcı Metodlar
 
-using System.Reflection;
-
 Console.WriteLine("Adınız :");
 string name = Console.ReadLine();
 Console.WriteLine("Soyadınız :");
