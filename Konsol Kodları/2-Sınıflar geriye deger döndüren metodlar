@@ -80,3 +80,21 @@ class Hesaplama
         return deger * deger;
     }
 }
+//sonraki örnek
+//Sınıflar
+//Constructor Yapıcı Metodlar
+
+Console.WriteLine("Ad - Kulüp");
+string info=Console.ReadLine();
+
+Student student = new Student(info); 
+
+Console.ReadLine();
+public class Student
+{
+    public Student(string info)
+    {
+        Console.WriteLine($"Status : {info}");
+
+    }
+}
