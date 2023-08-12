@@ -1,0 +1,28 @@
+//Sınıflar
+//Constructor Yapıcı Metodlar
+
+Console.WriteLine("Adınız :");
+string name = Console.ReadLine();
+Console.WriteLine("Soyadınız :");
+string surname = Console.ReadLine();
+Console.WriteLine("Yaşınız :");
+byte age = byte.Parse(Console.ReadLine());
+Console.WriteLine("Mesleginiz :");
+string job = Console.ReadLine();
+Console.WriteLine("-----------------------------------");
+
+Student student = new Student(name, surname, age, job);
+
+
+Console.ReadLine();
+public class Student
+{
+    public Student(string name, string surname, byte age, string job)
+    {
+        Console.WriteLine($"Adı : {name}");
+        Console.WriteLine($"SoyAdı : {surname}");
+        Console.WriteLine($"Yaşı : {age}");
+        Console.WriteLine($"Meslegi : {job}");
+
+    }
+}
