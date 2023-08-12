@@ -21,6 +21,11 @@ public class IdCard
 {
     public IdCard(string name, string surname, string city, byte age, char gender)
     {
+        Name = name;
+        Surname = surname;
+        City = city;
+        Age = age;
+        Gender = gender;
         Console.WriteLine($"Adı : {name}");
         Console.WriteLine($"SoyAdı : {surname}");
         Console.WriteLine($"Memleketi : {city}");
@@ -38,4 +43,9 @@ public class IdCard
             Console.WriteLine("Böyle bir cinsiyet bulunamadı");
         }
     }
+    public string Name { get; set; }
+    public string Surname { get; set; }
+    public string City { get; set; }
+    public byte Age { get; set; }
+    public char Gender { get; set; }
 }
