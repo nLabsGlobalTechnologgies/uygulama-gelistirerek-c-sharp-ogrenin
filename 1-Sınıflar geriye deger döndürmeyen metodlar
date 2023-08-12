@@ -1,0 +1,16 @@
+//Sınıflar
+//geriye deger döndürmeyen metodlar
+Message message = new Message();
+message.ShowMessage();
+
+
+Console.ReadLine();
+
+
+public class Message
+{
+    public void ShowMessage()
+    {
+        Console.WriteLine("Merhaba Mesajı");
+    }
+}
