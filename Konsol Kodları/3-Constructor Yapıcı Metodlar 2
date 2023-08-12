@@ -1,0 +1,43 @@
+//Sınıflar
+//Constructor Yapıcı Metodlar
+
+using System.Reflection;
+
+Console.WriteLine("Adınız :");
+string name = Console.ReadLine();
+Console.WriteLine("Soyadınız :");
+string surname = Console.ReadLine();
+Console.WriteLine("Memleketiniz :");
+string city = Console.ReadLine();
+Console.WriteLine("Yaşınız :");
+byte age = byte.Parse(Console.ReadLine());
+Console.WriteLine("Cinsiyetiniz (e/k) - e-Erkek/k-Kadın :");
+char gender = char.Parse(Console.ReadLine());
+Console.WriteLine("-----------------------------------");
+
+IdCard student = new IdCard(name, surname, city, age, gender);
+
+
+Console.ReadLine();
+public class IdCard
+{
+    public IdCard(string name, string surname, string city, byte age, char gender)
+    {
+        Console.WriteLine($"Adı : {name}");
+        Console.WriteLine($"SoyAdı : {surname}");
+        Console.WriteLine($"Memleketi : {city}");
+        Console.WriteLine($"Yaşı : {age}");
+        if (gender=='e')
+        {
+            Console.WriteLine($"Cinsiyeti : Erkek");
+        }
+        else if (gender == 'k')
+        {
+            Console.WriteLine($"Cinsiyeti : Kadın");
+        }
+        else
+        {
+            Console.WriteLine("Böyle bir cinsiyet bulunamadı");
+        }
+    }
+}
