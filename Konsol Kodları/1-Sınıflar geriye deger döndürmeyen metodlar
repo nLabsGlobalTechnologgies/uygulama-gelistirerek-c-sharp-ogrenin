@@ -52,3 +52,16 @@ public class People
         }
     }
 }
+//sonraki örnek ödev
+//Sınıflar
+//geriye deger döndürmeyen metodlar
+string name, surname, job;
+Console.WriteLine("Lütfen İsmini Gir");
+name = Console.ReadLine();
+Console.WriteLine("Lütfen Soyadını Gir");
+surname = Console.ReadLine();
+Console.WriteLine("Lütfen meslegini gir");
+job = Console.ReadLine();
+Console.Clear();
+Console.WriteLine($"İsim: {name} Soyisim: {surname} Meslek: {job}");
+Console.ReadLine();
