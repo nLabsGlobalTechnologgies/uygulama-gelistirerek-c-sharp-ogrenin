@@ -35,3 +35,48 @@ class Hesaplama
         return a - b;
     }
 }
+// sonraki örnek
+//Sınıflar
+//geriye deger döndüren metodlar
+
+Hesaplama islem = new Hesaplama();
+
+var topla = islem.Topla(5, 5);
+var carp = islem.Carp(5, 5);
+var bol = islem.Bol(5, 5);
+var cikart = islem.Cikart(5, 5);
+var kare = islem.Kare(5);
+Console.WriteLine($"Toplama Sonucu {topla}");
+Console.WriteLine($"Çarpma Sonucu {carp}");
+Console.WriteLine($"Bölme Sonucu {bol}");
+Console.WriteLine($"Çıkarma Sonucu {cikart}");
+Console.WriteLine($"Kare Sonucu {kare}");
+
+Console.ReadLine();
+
+class Hesaplama
+{
+    public int Topla(int a, int b)
+    {
+        return a + b;
+    }
+    public int Carp(int a, int b)
+    {
+        return a * b;
+    }
+
+    public int Bol(int a, int b)
+    {
+        return a / b;
+    }
+
+    public int Cikart(int a, int b)
+    {
+        return a - b;
+    }
+
+    public int Kare(int deger)
+    {
+        return deger * deger;
+    }
+}
